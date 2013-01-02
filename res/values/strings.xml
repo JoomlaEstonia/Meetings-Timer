@@ -1,0 +1,15 @@
+<resources>
+
+    <string name="app_name">Meetings Timer</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="menu_settings">Settings</string>
+    <string name="Start">  Start  </string>
+    <string name="Tarea1">First Task</string>
+    <string name="Tarea2">Second Task</string>
+    <string name="Tarea3">Third Task</string>
+    <string name="Tarea4">Forth Task</string>
+    <string name="Stop">  Stop  </string>
+    <string name="Restart"> Restart </string>
+    <string name="StartAll"> Start All </string>
+</resources>
