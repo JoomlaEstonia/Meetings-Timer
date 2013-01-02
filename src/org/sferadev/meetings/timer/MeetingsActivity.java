@@ -13,7 +13,7 @@ import android.widget.Button;
 import android.widget.Chronometer;
 import android.support.v4.app.NavUtils;
 
-public class MainActivity extends Activity {
+public class MeetingsActivity extends Activity {
     Chronometer cGeneral;
     Chronometer clectura;
     Chronometer cn1;
