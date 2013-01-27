@@ -1,0 +1,14 @@
+<resources>
+
+    <string name="app_name">Meetings Timer</string>
+    <string name="title_activity_main">Meetings Timer</string>
+    <string name="menu_settings">Settings</string>
+    <string name="Start">Empieza</string>
+    <string name="Stop">Para</string>
+    <string name="Restart">Reinicia</string>
+    <string name="general">General</string>
+    <string name="eb">Estudio Bíblico</string>
+    <string name="lectura">Lectura</string>
+    <string name="partes">Partes</string>
+    <string name="escuela">Escuela</string>
+</resources>
