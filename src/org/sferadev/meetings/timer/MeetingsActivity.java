@@ -1,5 +1,6 @@
 package org.sferadev.meetings.timer;
 
+import org.sferadev.meetings.timer.AboutActivity;
 import org.sferadev.meetings.timer.R;
 
 import android.os.Bundle;
@@ -238,13 +239,6 @@ public class MeetingsActivity extends TabActivity {
         }
     
     };
-    
-    public void ShareWith(View v) {
-    	Intent i=new Intent(android.content.Intent.ACTION_SEND);
-    	i.setType("text/plain");
-    	i.putExtra(android.content.Intent.EXTRA_TEXT, "");
-    	startActivity(Intent.createChooser(i,"Share via"));
-    }
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
@@ -252,4 +246,36 @@ public class MeetingsActivity extends TabActivity {
         return true;
     }
 
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        switch (item.getItemId()) {
+           case R.id.shareWith:
+        	   Intent i = new Intent(android.content.Intent.ACTION_SEND);
+           		i.setType("text/plain");
+           		i.putExtra(android.content.Intent.EXTRA_TEXT, "" +
+           				getResources().getText(R.string.sGeneral) + " " +
+           				cGeneral.getText() +
+           				getResources().getText(R.string.sEB) + " " +
+           				cEb.getText() +
+           				getResources().getText(R.string.sReading) + " " +
+           				cLectura.getText() +
+           				getResources().getText(R.string.sN1) + " " +
+           				cN1.getText() +
+           				getResources().getText(R.string.sN2) + " " +
+           				cN2.getText() +
+           				getResources().getText(R.string.sN3) + " " +
+           				cN3.getText());
+           		startActivity(Intent.createChooser(i,"Share via"));
+           		break;
+           		
+           		case R.id.about:
+      			Intent intent = new Intent(this, AboutActivity.class);
+      	        this.startActivity(intent);
+      	        break;
+   			
+   		}
+        
+        return true;
+    }
+    
 }

@@ -11,4 +11,20 @@
     <string name="lectura">Lectura</string>
     <string name="partes">Partes</string>
     <string name="escuela">Escuela</string>
+	<string name="toast">La App funciona oculta. Continúa contando pero puede ser cerrada sin tu permiso.</string>
+    <string name="sN1">\nNúmero 1: </string>
+    <string name="sN2">\nNúmero 2: </string>
+    <string name="sN3">\nNúmero 3: </string>
+    <string name="sReading">\nLectura: </string>
+    <string name="sGeneral">General: </string>
+    <string name="sEB">\nEstudio Bíblico: </string>
+    
+    <string name="about">Acerca</string>
+    <string name="about_title">Acerca de JW Meetings Timer</string>
+    <string name="about_text">JW Meetings Timer te permite controlar el tiempo de las reuniones semanales de los TJ dentro de tu dispositivo Android y luego enviar los resultados al coordinador.</string>
+    
+    <string name="button_github">OpenSource en GitHub</string>
+    <string name="button_paypal">Apoya la App en PayPal</string>
+    <string name="about_donations">Las donaciones PayPal no afectan la funcion de la App solo contribuyen con el desarrollador.</string>
+    
 </resources>
