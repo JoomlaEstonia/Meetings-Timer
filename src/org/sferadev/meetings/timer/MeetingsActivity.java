@@ -6,6 +6,8 @@ import android.os.Bundle;
 import android.os.SystemClock;
 import android.app.Activity;
 import android.app.TabActivity;
+import android.content.Context;
+import android.content.Intent;
 import android.view.KeyEvent;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -15,14 +17,24 @@ import android.widget.Button;
 import android.widget.Chronometer;
 import android.widget.TabHost;
 import android.widget.TabHost.TabSpec;
+import android.widget.Toast;
 import android.support.v4.app.NavUtils;
 
 public class MeetingsActivity extends TabActivity {
     
+	String toast;
+	
 	@Override
 	public void onBackPressed()
 	{
 	      moveTaskToBack(true);
+	      
+	      Context context = getApplicationContext();
+	      int text = R.string.toast;
+	      int duration = Toast.LENGTH_LONG;
+
+	      Toast toast = Toast.makeText(context, text, duration);
+	      toast.show();
 	}
 	
 	@Override
@@ -226,6 +238,13 @@ public class MeetingsActivity extends TabActivity {
         }
     
     };
+    
+    public void ShareWith(View v) {
+    	Intent i=new Intent(android.content.Intent.ACTION_SEND);
+    	i.setType("text/plain");
+    	i.putExtra(android.content.Intent.EXTRA_TEXT, "");
+    	startActivity(Intent.createChooser(i,"Share via"));
+    }
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {

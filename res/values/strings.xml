@@ -11,4 +11,5 @@
     <string name="lectura">Reading</string>
     <string name="partes">Parts</string>
     <string name="escuela">School</string>
+    <string name="toast">App is going to background. It continues working but can be closed without your confirmation.</string>
 </resources>
