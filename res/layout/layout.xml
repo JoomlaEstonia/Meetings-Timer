@@ -147,6 +147,361 @@
 		    android:layout_height="match_parent" >
 
 			<LinearLayout
+			    android:id="@+id/TMS"
+			    android:layout_width="match_parent"
+			    android:layout_height="match_parent"
+			    android:orientation="vertical" >
+
+			    <ScrollView
+			        android:id="@+id/TMSA"
+			        android:layout_width="match_parent"
+			        android:layout_height="match_parent" >
+
+			        <LinearLayout
+			            android:layout_width="match_parent"
+			            android:layout_height="match_parent"
+			            android:orientation="vertical" >
+
+			            <ScrollView
+			                android:id="@+id/LB1"
+			                android:layout_width="fill_parent"
+			                android:layout_height="fill_parent" >
+
+			                <LinearLayout
+			                    android:id="@+id/LinearLayout04"
+			                    android:layout_width="fill_parent"
+			                    android:layout_height="fill_parent"
+			                    android:layout_marginBottom="15sp"
+			                    android:layout_marginLeft="15sp"
+			                    android:layout_marginRight="40sp"
+			                    android:layout_marginTop="15sp" >
+
+			                    <TextView
+			                        android:id="@+id/TextView07"
+			                        android:layout_width="wrap_content"
+			                        android:layout_height="wrap_content"
+			                        android:layout_weight="1"
+			                        android:gravity="center"
+			                        android:text="@string/lectura"
+			                        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+			                    <Chronometer
+			                        android:id="@+id/clectura"
+			                        android:layout_width="wrap_content"
+			                        android:layout_height="wrap_content"
+			                        android:layout_weight="1"
+			                        android:gravity="center"
+			                        android:text="Chronometer"
+			                        android:textSize="25sp" />
+			                </LinearLayout>
+			            </ScrollView>
+
+			            <ScrollView
+			                android:id="@+id/LB2"
+			                android:layout_width="match_parent"
+			                android:layout_height="match_parent"
+			                android:layout_weight="1" >
+
+			                <LinearLayout
+			                    android:id="@+id/LinearLayout03"
+			                    android:layout_width="match_parent"
+			                    android:layout_height="match_parent" >
+
+			                    <Button
+			                        android:id="@+id/startlb"
+			                        android:layout_width="wrap_content"
+			                        android:layout_height="wrap_content"
+			                        android:layout_weight="1"
+			                        android:text="Start"
+			                        android:textSize="15sp" />
+
+			                    <Button
+			                        android:id="@+id/stoplb"
+			                        android:layout_width="wrap_content"
+			                        android:layout_height="wrap_content"
+			                        android:layout_weight="1"
+			                        android:text="Stop"
+			                        android:textSize="15sp" />
+
+			                    <Button
+			                        android:id="@+id/resetlb"
+			                        android:layout_width="wrap_content"
+			                        android:layout_height="wrap_content"
+			                        android:layout_weight="1"
+			                        android:text="Reset"
+			                        android:textSize="15sp" />
+			                </LinearLayout>
+			            </ScrollView>
+
+			            <ScrollView
+			                android:id="@+id/LB3"
+			                android:layout_width="match_parent"
+			                android:layout_height="wrap_content"
+			                android:layout_marginTop="5dp" >
+
+			                <LinearLayout
+			                    android:layout_width="match_parent"
+			                    android:layout_height="match_parent" >
+
+			                    <TextView
+			                        android:id="@+id/TextView03"
+			                        android:layout_width="wrap_content"
+			                        android:layout_height="wrap_content"
+			                        android:layout_weight="1"
+			                        android:gravity="center"
+			                        android:text="@string/lecturacounter"
+			                        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+			                    <TextView
+			                        android:id="@+id/Tcounter"
+			                        android:layout_width="wrap_content"
+			                        android:layout_height="wrap_content"
+			                        android:layout_weight="1"
+			                        android:text="@string/prompt"
+			                        android:textSize="25sp" />
+
+			                </LinearLayout>
+			            </ScrollView>
+
+			            <ScrollView
+			                android:id="@+id/LB4"
+			                android:layout_width="match_parent"
+			                android:layout_height="wrap_content" >
+
+			                <LinearLayout
+			                    android:layout_width="match_parent"
+			                    android:layout_height="match_parent" >
+
+			                    <Button
+			                        android:id="@+id/buttoncounter"
+			                        android:layout_width="fill_parent"
+			                        android:layout_height="wrap_content"
+			                        android:text="@string/newreply" />
+
+			                </LinearLayout>
+			            </ScrollView>
+
+			            <ScrollView
+			                android:id="@+id/N1.1"
+			                android:layout_width="fill_parent"
+			                android:layout_height="fill_parent" >
+
+			                <LinearLayout
+			                    android:id="@+id/LinearLayout06"
+			                    android:layout_width="fill_parent"
+			                    android:layout_height="fill_parent"
+			                    android:layout_marginBottom="15sp"
+			                    android:layout_marginLeft="15sp"
+			                    android:layout_marginRight="40sp"
+			                    android:layout_marginTop="15sp" >
+
+			                    <TextView
+			                        android:id="@+id/TextView04"
+			                        android:layout_width="wrap_content"
+			                        android:layout_height="wrap_content"
+			                        android:layout_weight="1"
+			                        android:gravity="center"
+			                        android:text="N1"
+			                        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+			                    <Chronometer
+			                        android:id="@+id/cn1"
+			                        android:layout_width="wrap_content"
+			                        android:layout_height="wrap_content"
+			                        android:layout_weight="1"
+			                        android:gravity="center"
+			                        android:text="Chronometer"
+			                        android:textSize="25sp" />
+			                </LinearLayout>
+			            </ScrollView>
+
+			            <ScrollView
+			                android:id="@+id/N1.2"
+			                android:layout_width="match_parent"
+			                android:layout_height="match_parent"
+			                android:layout_weight="1" >
+
+			                <LinearLayout
+			                    android:id="@+id/LinearLayout05"
+			                    android:layout_width="match_parent"
+			                    android:layout_height="match_parent" >
+
+			                    <Button
+			                        android:id="@+id/startn1"
+			                        android:layout_width="wrap_content"
+			                        android:layout_height="wrap_content"
+			                        android:layout_weight="1"
+			                        android:text="Start"
+			                        android:textSize="15sp" />
+
+			                    <Button
+			                        android:id="@+id/stopn1"
+			                        android:layout_width="wrap_content"
+			                        android:layout_height="wrap_content"
+			                        android:layout_weight="1"
+			                        android:text="Stop"
+			                        android:textSize="15sp" />
+
+			                    <Button
+			                        android:id="@+id/resetn1"
+			                        android:layout_width="wrap_content"
+			                        android:layout_height="wrap_content"
+			                        android:layout_weight="1"
+			                        android:text="Reset"
+			                        android:textSize="15sp" />
+			                </LinearLayout>
+			            </ScrollView>
+
+			            <ScrollView
+			                android:id="@+id/N2.1"
+			                android:layout_width="fill_parent"
+			                android:layout_height="fill_parent" >
+
+			                <LinearLayout
+			                    android:id="@+id/LinearLayout07"
+			                    android:layout_width="fill_parent"
+			                    android:layout_height="fill_parent"
+			                    android:layout_marginBottom="15sp"
+			                    android:layout_marginLeft="15sp"
+			                    android:layout_marginRight="40sp"
+			                    android:layout_marginTop="15sp" >
+
+			                    <TextView
+			                        android:id="@+id/TextView05"
+			                        android:layout_width="wrap_content"
+			                        android:layout_height="wrap_content"
+			                        android:layout_marginTop="14sp"
+			                        android:layout_weight="1"
+			                        android:gravity="center"
+			                        android:text="N2"
+			                        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+			                    <Chronometer
+			                        android:id="@+id/cn2"
+			                        android:layout_width="wrap_content"
+			                        android:layout_height="wrap_content"
+			                        android:layout_marginTop="15sp"
+			                        android:layout_weight="1"
+			                        android:gravity="center"
+			                        android:text="Chronometer"
+			                        android:textSize="25sp" />
+			                </LinearLayout>
+			            </ScrollView>
+
+			            <ScrollView
+			                android:id="@+id/N2.2"
+			                android:layout_width="match_parent"
+			                android:layout_height="match_parent"
+			                android:layout_weight="1" >
+
+			                <LinearLayout
+			                    android:id="@+id/LinearLayout08"
+			                    android:layout_width="match_parent"
+			                    android:layout_height="match_parent" >
+
+			                    <Button
+			                        android:id="@+id/startn2"
+			                        android:layout_width="wrap_content"
+			                        android:layout_height="wrap_content"
+			                        android:layout_weight="1"
+			                        android:text="Start"
+			                        android:textSize="15sp" />
+
+			                    <Button
+			                        android:id="@+id/stopn2"
+			                        android:layout_width="wrap_content"
+			                        android:layout_height="wrap_content"
+			                        android:layout_weight="1"
+			                        android:text="Stop"
+			                        android:textSize="15sp" />
+
+			                    <Button
+			                        android:id="@+id/resetn2"
+			                        android:layout_width="wrap_content"
+			                        android:layout_height="wrap_content"
+			                        android:layout_weight="1"
+			                        android:text="Reset"
+			                        android:textSize="15sp" />
+			                </LinearLayout>
+			            </ScrollView>
+
+			            <ScrollView
+			                android:id="@+id/N3.1"
+			                android:layout_width="fill_parent"
+			                android:layout_height="fill_parent" >
+
+			                <LinearLayout
+			                    android:id="@+id/LinearLayout09"
+			                    android:layout_width="fill_parent"
+			                    android:layout_height="fill_parent"
+			                    android:layout_marginBottom="15sp"
+			                    android:layout_marginLeft="15sp"
+			                    android:layout_marginRight="40sp"
+			                    android:layout_marginTop="15sp" >
+
+			                    <TextView
+			                        android:id="@+id/TextView06"
+			                        android:layout_width="wrap_content"
+			                        android:layout_height="wrap_content"
+			                        android:layout_marginTop="14sp"
+			                        android:layout_weight="1"
+			                        android:gravity="center"
+			                        android:text="N3"
+			                        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+			                    <Chronometer
+			                        android:id="@+id/cn3"
+			                        android:layout_width="wrap_content"
+			                        android:layout_height="wrap_content"
+			                        android:layout_marginTop="15sp"
+			                        android:layout_weight="1"
+			                        android:gravity="center"
+			                        android:text="Chronometer"
+			                        android:textSize="25sp" />
+			                </LinearLayout>
+			            </ScrollView>
+
+			            <ScrollView
+			                android:id="@+id/N3.2"
+			                android:layout_width="match_parent"
+			                android:layout_height="match_parent"
+			                android:layout_weight="1" >
+
+			                <LinearLayout
+			                    android:id="@+id/LinearLayout10"
+			                    android:layout_width="match_parent"
+			                    android:layout_height="match_parent" >
+
+			                    <Button
+			                        android:id="@+id/startn3"
+			                        android:layout_width="wrap_content"
+			                        android:layout_height="wrap_content"
+			                        android:layout_weight="1"
+			                        android:text="Start"
+			                        android:textSize="15sp" />
+
+			                    <Button
+			                        android:id="@+id/stopn3"
+			                        android:layout_width="wrap_content"
+			                        android:layout_height="wrap_content"
+			                        android:layout_weight="1"
+			                        android:text="Stop"
+			                        android:textSize="15sp" />
+
+			                    <Button
+			                        android:id="@+id/resetn3"
+			                        android:layout_width="wrap_content"
+			                        android:layout_height="wrap_content"
+			                        android:layout_weight="1"
+			                        android:text="Reset"
+			                        android:textSize="15sp" />
+			                </LinearLayout>
+			            </ScrollView>
+			        </LinearLayout>
+			    </ScrollView>
+			</LinearLayout>
+
+			<LinearLayout
 			    android:id="@+id/EB"
 			    android:layout_width="match_parent"
 			    android:layout_height="match_parent"
@@ -236,314 +591,6 @@
 						    </LinearLayout>
 						</ScrollView>
 
-					</LinearLayout>
-
-				</ScrollView>
-			</LinearLayout>
-
-			<LinearLayout
-			    android:id="@+id/TMS"
-			    android:layout_width="match_parent"
-			    android:layout_height="match_parent"
-			    android:orientation="vertical" >
-
-				<ScrollView
-				    android:id="@+id/TMSA"
-				    android:layout_width="match_parent"
-				    android:layout_height="match_parent" >
-
-					<LinearLayout
-					    android:layout_width="match_parent"
-					    android:layout_height="match_parent"
-					    android:orientation="vertical" >
-
-					    <ScrollView
-					        android:id="@+id/LB1"
-					        android:layout_width="fill_parent"
-					        android:layout_height="fill_parent" >
-
-					        <LinearLayout
-					            android:id="@+id/LinearLayout04"
-					            android:layout_width="fill_parent"
-					            android:layout_height="fill_parent"
-					            android:layout_marginBottom="15sp"
-					            android:layout_marginLeft="15sp"
-					            android:layout_marginRight="40sp"
-					            android:layout_marginTop="15sp" >
-
-					            <TextView
-					                android:id="@+id/TextView03"
-					                android:layout_width="wrap_content"
-					                android:layout_height="wrap_content"
-					                android:layout_weight="1"
-					                android:gravity="center"
-					                android:text="@string/lectura"
-					                android:textAppearance="?android:attr/textAppearanceLarge" />
-
-					            <Chronometer
-					                android:id="@+id/clectura"
-					                android:layout_width="wrap_content"
-					                android:layout_height="wrap_content"
-					                android:layout_weight="1"
-					                android:gravity="center"
-					                android:text="Chronometer"
-					                android:textSize="25sp" />
-					        </LinearLayout>
-					    </ScrollView>
-
-					    <ScrollView
-					        android:id="@+id/LB2"
-					        android:layout_width="match_parent"
-					        android:layout_height="match_parent"
-					        android:layout_weight="1" >
-
-					        <LinearLayout
-					            android:id="@+id/LinearLayout03"
-					            android:layout_width="match_parent"
-					            android:layout_height="match_parent" >
-
-					            <Button
-					                android:id="@+id/startlb"
-					                android:layout_width="wrap_content"
-					                android:layout_height="wrap_content"
-					                android:layout_weight="1"
-					                android:text="Start"
-					                android:textSize="15sp" />
-
-					            <Button
-					                android:id="@+id/stoplb"
-					                android:layout_width="wrap_content"
-					                android:layout_height="wrap_content"
-					                android:layout_weight="1"
-					                android:text="Stop"
-					                android:textSize="15sp" />
-
-					            <Button
-					                android:id="@+id/resetlb"
-					                android:layout_width="wrap_content"
-					                android:layout_height="wrap_content"
-					                android:layout_weight="1"
-					                android:text="Reset"
-					                android:textSize="15sp" />
-					        </LinearLayout>
-					    </ScrollView>
-
-					    <ScrollView
-					        android:id="@+id/N1.1"
-					        android:layout_width="fill_parent"
-					        android:layout_height="fill_parent" >
-
-					        <LinearLayout
-					            android:id="@+id/LinearLayout06"
-					            android:layout_width="fill_parent"
-					            android:layout_height="fill_parent"
-					            android:layout_marginBottom="15sp"
-					            android:layout_marginLeft="15sp"
-					            android:layout_marginRight="40sp"
-					            android:layout_marginTop="15sp" >
-
-					            <TextView
-					                android:id="@+id/TextView04"
-					                android:layout_width="wrap_content"
-					                android:layout_height="wrap_content"
-					                android:layout_weight="1"
-					                android:gravity="center"
-					                android:text="N1"
-					                android:textAppearance="?android:attr/textAppearanceLarge" />
-
-					            <Chronometer
-					                android:id="@+id/cn1"
-					                android:layout_width="wrap_content"
-					                android:layout_height="wrap_content"
-					                android:layout_weight="1"
-					                android:gravity="center"
-					                android:text="Chronometer"
-					                android:textSize="25sp" />
-					        </LinearLayout>
-					    </ScrollView>
-
-					    <ScrollView
-					        android:id="@+id/N1.2"
-					        android:layout_width="match_parent"
-					        android:layout_height="match_parent"
-					        android:layout_weight="1" >
-
-					        <LinearLayout
-					            android:id="@+id/LinearLayout05"
-					            android:layout_width="match_parent"
-					            android:layout_height="match_parent" >
-
-					            <Button
-					                android:id="@+id/startn1"
-					                android:layout_width="wrap_content"
-					                android:layout_height="wrap_content"
-					                android:layout_weight="1"
-					                android:text="Start"
-					                android:textSize="15sp" />
-
-					            <Button
-					                android:id="@+id/stopn1"
-					                android:layout_width="wrap_content"
-					                android:layout_height="wrap_content"
-					                android:layout_weight="1"
-					                android:text="Stop"
-					                android:textSize="15sp" />
-
-					            <Button
-					                android:id="@+id/resetn1"
-					                android:layout_width="wrap_content"
-					                android:layout_height="wrap_content"
-					                android:layout_weight="1"
-					                android:text="Reset"
-					                android:textSize="15sp" />
-					        </LinearLayout>
-					    </ScrollView>
-
-					    <ScrollView
-					        android:id="@+id/N2.1"
-					        android:layout_width="fill_parent"
-					        android:layout_height="fill_parent" >
-
-					        <LinearLayout
-					            android:id="@+id/LinearLayout07"
-					            android:layout_width="fill_parent"
-					            android:layout_height="fill_parent"
-					            android:layout_marginBottom="15sp"
-					            android:layout_marginLeft="15sp"
-					            android:layout_marginRight="40sp"
-					            android:layout_marginTop="15sp" >
-
-					            <TextView
-					                android:id="@+id/TextView05"
-					                android:layout_width="wrap_content"
-					                android:layout_height="wrap_content"
-					                android:layout_marginTop="14sp"
-					                android:layout_weight="1"
-					                android:gravity="center"
-					                android:text="N2"
-					                android:textAppearance="?android:attr/textAppearanceLarge" />
-
-					            <Chronometer
-					                android:id="@+id/cn2"
-					                android:layout_width="wrap_content"
-					                android:layout_height="wrap_content"
-					                android:layout_marginTop="15sp"
-					                android:layout_weight="1"
-					                android:gravity="center"
-					                android:text="Chronometer"
-					                android:textSize="25sp" />
-					        </LinearLayout>
-					    </ScrollView>
-
-					    <ScrollView
-					        android:id="@+id/N2.2"
-					        android:layout_width="match_parent"
-					        android:layout_height="match_parent"
-					        android:layout_weight="1" >
-
-					        <LinearLayout
-					            android:id="@+id/LinearLayout08"
-					            android:layout_width="match_parent"
-					            android:layout_height="match_parent" >
-
-					            <Button
-					                android:id="@+id/startn2"
-					                android:layout_width="wrap_content"
-					                android:layout_height="wrap_content"
-					                android:layout_weight="1"
-					                android:text="Start"
-					                android:textSize="15sp" />
-
-					            <Button
-					                android:id="@+id/stopn2"
-					                android:layout_width="wrap_content"
-					                android:layout_height="wrap_content"
-					                android:layout_weight="1"
-					                android:text="Stop"
-					                android:textSize="15sp" />
-
-					            <Button
-					                android:id="@+id/resetn2"
-					                android:layout_width="wrap_content"
-					                android:layout_height="wrap_content"
-					                android:layout_weight="1"
-					                android:text="Reset"
-					                android:textSize="15sp" />
-					        </LinearLayout>
-					    </ScrollView>
-
-					    <ScrollView
-					        android:id="@+id/N3.1"
-					        android:layout_width="fill_parent"
-					        android:layout_height="fill_parent" >
-
-					        <LinearLayout
-					            android:id="@+id/LinearLayout09"
-					            android:layout_width="fill_parent"
-					            android:layout_height="fill_parent"
-					            android:layout_marginBottom="15sp"
-					            android:layout_marginLeft="15sp"
-					            android:layout_marginRight="40sp"
-					            android:layout_marginTop="15sp" >
-
-					            <TextView
-					                android:id="@+id/TextView06"
-					                android:layout_width="wrap_content"
-					                android:layout_height="wrap_content"
-					                android:layout_marginTop="14sp"
-					                android:layout_weight="1"
-					                android:gravity="center"
-					                android:text="N3"
-					                android:textAppearance="?android:attr/textAppearanceLarge" />
-
-					            <Chronometer
-					                android:id="@+id/cn3"
-					                android:layout_width="wrap_content"
-					                android:layout_height="wrap_content"
-					                android:layout_marginTop="15sp"
-					                android:layout_weight="1"
-					                android:gravity="center"
-					                android:text="Chronometer"
-					                android:textSize="25sp" />
-					        </LinearLayout>
-					    </ScrollView>
-
-					    <ScrollView
-					        android:id="@+id/N3.2"
-					        android:layout_width="match_parent"
-					        android:layout_height="match_parent"
-					        android:layout_weight="1" >
-
-					        <LinearLayout
-					            android:id="@+id/LinearLayout10"
-					            android:layout_width="match_parent"
-					            android:layout_height="match_parent" >
-
-					            <Button
-					                android:id="@+id/startn3"
-					                android:layout_width="wrap_content"
-					                android:layout_height="wrap_content"
-					                android:layout_weight="1"
-					                android:text="Start"
-					                android:textSize="15sp" />
-
-					            <Button
-					                android:id="@+id/stopn3"
-					                android:layout_width="wrap_content"
-					                android:layout_height="wrap_content"
-					                android:layout_weight="1"
-					                android:text="Stop"
-					                android:textSize="15sp" />
-
-					            <Button
-					                android:id="@+id/resetn3"
-					                android:layout_width="wrap_content"
-					                android:layout_height="wrap_content"
-					                android:layout_weight="1"
-					                android:text="Reset"
-					                android:textSize="15sp" />
-					        </LinearLayout>
-					    </ScrollView>
 					</LinearLayout>
 
 				</ScrollView>

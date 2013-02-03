@@ -9,6 +9,9 @@
     <string name="general">General</string>
     <string name="eb">Estudio Bíblico</string>
     <string name="lectura">Lectura</string>
+    <string name="lecturacounter">Número de repuestas</string>
+    <string name="newreply">Nueva Respuesta</string>
+    <string name="sharereply">\nNúmero de repuestas:</string>
     <string name="partes">Partes</string>
     <string name="escuela">Escuela</string>
 	<string name="toast">La App funciona oculta. Continúa contando pero puede ser cerrada sin tu permiso.</string>

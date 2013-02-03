@@ -9,6 +9,9 @@
     <string name="general">General</string>
     <string name="eb">Bible Study</string>
     <string name="lectura">Reading</string>
+    <string name="lecturacounter">Number of replies</string>
+    <string name="newreply">New Reply</string>
+    <string name="sharereply">\nNumber of replies:</string>
     <string name="partes">Sections</string>
     <string name="escuela">School</string>
     <string name="toast">App is going to background. It continues working but can be closed without your confirmation.</string>
@@ -18,6 +21,7 @@
     <string name="sReading">\nReading: </string>
     <string name="sGeneral">General: </string>
     <string name="sEB">\nBible Study: </string>
+    <string name="prompt">0</string>
     
     <string name="about">About</string>
     <string name="about_title">About JW Meetings Timer</string>

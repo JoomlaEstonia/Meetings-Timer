@@ -18,6 +18,7 @@ import android.widget.Button;
 import android.widget.Chronometer;
 import android.widget.TabHost;
 import android.widget.TabHost.TabSpec;
+import android.widget.TextView;
 import android.widget.Toast;
 import android.support.v4.app.NavUtils;
 
@@ -57,6 +58,9 @@ public class MeetingsActivity extends TabActivity {
     String eb;
     String tms;
     
+    int num = 0;
+    TextView counter;
+    Button counterbutton;
     
 
     @Override
@@ -129,6 +133,15 @@ public class MeetingsActivity extends TabActivity {
         button = (Button) findViewById(R.id.reseteb);
         button.setOnClickListener(LResetEb);
        
+        counter = (TextView) findViewById(R.id.Tcounter);
+        counterbutton = (Button) findViewById(R.id.buttoncounter);
+
+        counterbutton.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                num++;
+                counter.setText(Integer.toString(num));
+            }
+        });
       
     }
     
@@ -259,6 +272,8 @@ public class MeetingsActivity extends TabActivity {
            				cEb.getText() +
            				getResources().getText(R.string.sReading) + " " +
            				cLectura.getText() +
+           				getResources().getText(R.string.sharereply) + " " +
+           				counter.getText() +
            				getResources().getText(R.string.sN1) + " " +
            				cN1.getText() +
            				getResources().getText(R.string.sN2) + " " +
