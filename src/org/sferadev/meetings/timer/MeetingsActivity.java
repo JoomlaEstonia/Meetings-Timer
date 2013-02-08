@@ -135,6 +135,7 @@ public class MeetingsActivity extends TabActivity {
        
         counter = (TextView) findViewById(R.id.Tcounter);
         counterbutton = (Button) findViewById(R.id.buttoncounter);
+        //mincounterbutton = (Button) findViewById(R.id.mincounter);
 
         counterbutton.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
@@ -142,6 +143,13 @@ public class MeetingsActivity extends TabActivity {
                 counter.setText(Integer.toString(num));
             }
         });
+        
+        //mincounterbutton.setOnClickListener(new View.OnClickListener() {
+            //public void onClick(View v) {
+                //num--;
+                //counter.setText(Integer.toString(num));
+           // }
+        //});
       
     }
     
