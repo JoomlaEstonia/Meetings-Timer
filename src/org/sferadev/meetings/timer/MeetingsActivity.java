@@ -16,6 +16,7 @@ import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.Button;
 import android.widget.Chronometer;
+import android.widget.ImageButton;
 import android.widget.TabHost;
 import android.widget.TabHost.TabSpec;
 import android.widget.TextView;
@@ -85,6 +86,8 @@ public class MeetingsActivity extends TabActivity {
         host.addTab(spec2);
         
         Button button;
+        ImageButton ibutton;
+        
         cGeneral = (Chronometer) findViewById(R.id.cgeneral);
         cLectura = (Chronometer) findViewById(R.id.clectura);
         cN1 = (Chronometer) findViewById(R.id.cn1);
@@ -133,6 +136,19 @@ public class MeetingsActivity extends TabActivity {
         button.setOnClickListener(LStopEb);
         button = (Button) findViewById(R.id.reseteb);
         button.setOnClickListener(LResetEb);
+        
+        ibutton = (ImageButton) findViewById(R.id.sharegeneral);
+        ibutton.setOnClickListener(LshareGeneral);
+        ibutton = (ImageButton) findViewById(R.id.shareeb);
+        ibutton.setOnClickListener(LshareEb);
+        ibutton = (ImageButton) findViewById(R.id.sharelb);
+        ibutton.setOnClickListener(LshareLb);
+        ibutton = (ImageButton) findViewById(R.id.sharen1);
+        ibutton.setOnClickListener(LshareN1);
+        ibutton = (ImageButton) findViewById(R.id.sharen2);
+        ibutton.setOnClickListener(LshareN2);
+        ibutton = (ImageButton) findViewById(R.id.sharen3);
+        ibutton.setOnClickListener(LshareN3);
        
         counter = (TextView) findViewById(R.id.Tcounter);
         counterbutton = (Button) findViewById(R.id.buttoncounter);
@@ -258,6 +274,91 @@ public class MeetingsActivity extends TabActivity {
     View.OnClickListener LResetEb = new OnClickListener() {
         public void onClick(View v) {
             cEb.setBase(SystemClock.elapsedRealtime());
+        }
+    
+    };
+    
+    
+    View.OnClickListener LshareGeneral = new OnClickListener() {
+        public void onClick(View v) {
+        	Intent i = new Intent(android.content.Intent.ACTION_SEND);
+       		i.setType("text/plain");
+       		i.putExtra(android.content.Intent.EXTRA_TEXT, "" +
+       				getResources().getText(R.string.sGeneral) + " " +
+       				cGeneral.getText() +
+       				getResources().getText(R.string.sEB) + " " +
+       				cEb.getText() +
+       				getResources().getText(R.string.sReading) + " " +
+       				cLectura.getText() +
+       				getResources().getText(R.string.sharereply) + " " +
+       				counter.getText() +
+       				getResources().getText(R.string.sN1) + " " +
+       				cN1.getText() +
+       				getResources().getText(R.string.sN2) + " " +
+       				cN2.getText() +
+       				getResources().getText(R.string.sN3) + " " +
+       				cN3.getText());
+       		startActivity(Intent.createChooser(i,"Share via"));
+        }
+    
+    };
+    
+    View.OnClickListener LshareEb = new OnClickListener() {
+        public void onClick(View v) {
+        	Intent i = new Intent(android.content.Intent.ACTION_SEND);
+       		i.setType("text/plain");
+       		i.putExtra(android.content.Intent.EXTRA_TEXT, "" +
+       				getResources().getText(R.string.sEB) + " " +
+       				cEb.getText());
+       		startActivity(Intent.createChooser(i,"Share via"));
+        }
+    
+    };
+    
+    View.OnClickListener LshareLb = new OnClickListener() {
+        public void onClick(View v) {
+        	Intent i = new Intent(android.content.Intent.ACTION_SEND);
+       		i.setType("text/plain");
+       		i.putExtra(android.content.Intent.EXTRA_TEXT, "" +
+       				getResources().getText(R.string.sReading) + " " +
+       				cLectura.getText());
+       		startActivity(Intent.createChooser(i,"Share via"));
+        }
+    
+    };
+    
+    View.OnClickListener LshareN1 = new OnClickListener() {
+        public void onClick(View v) {
+        	Intent i = new Intent(android.content.Intent.ACTION_SEND);
+       		i.setType("text/plain");
+       		i.putExtra(android.content.Intent.EXTRA_TEXT, "" +
+       				getResources().getText(R.string.sN1) + " " +
+       				cN1.getText());
+       		startActivity(Intent.createChooser(i,"Share via"));
+        }
+    
+    };
+    
+    View.OnClickListener LshareN2 = new OnClickListener() {
+        public void onClick(View v) {
+        	Intent i = new Intent(android.content.Intent.ACTION_SEND);
+       		i.setType("text/plain");
+       		i.putExtra(android.content.Intent.EXTRA_TEXT, "" +
+       				getResources().getText(R.string.sN2) + " " +
+       				cN2.getText());
+       		startActivity(Intent.createChooser(i,"Share via"));
+        }
+    
+    };
+    
+    View.OnClickListener LshareN3 = new OnClickListener() {
+        public void onClick(View v) {
+        	Intent i = new Intent(android.content.Intent.ACTION_SEND);
+       		i.setType("text/plain");
+       		i.putExtra(android.content.Intent.EXTRA_TEXT, "" +
+       				getResources().getText(R.string.sN3) + " " +
+       				cN3.getText());
+       		startActivity(Intent.createChooser(i,"Share via"));
         }
     
     };

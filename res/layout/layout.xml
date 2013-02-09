@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent"
+    android:layout_width="fill_parent"
     android:layout_height="match_parent"
     android:layout_marginBottom="20dp"
     android:layout_marginLeft="20dp"
@@ -8,12 +8,12 @@
 
     <ScrollView
         android:id="@+id/scrollView3"
-        android:layout_width="fill_parent"
-        android:layout_height="fill_parent" >
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
 
         <LinearLayout
-            android:layout_width="fill_parent"
-            android:layout_height="fill_parent" >
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
 
             <TabHost
                 xmlns:android="http://schemas.android.com/apk/res/android"
@@ -106,14 +106,13 @@
                                         android:text="Reset"
                                         android:textSize="15sp" />
 
-                                    <Button
-                                        android:id="@+id/button1"
-                                        style="?android:attr/buttonStyleSmall"
+                                    <ImageButton
+                                        android:id="@+id/sharegeneral"
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
                                         android:layout_weight="1"
-                                        android:drawableTop="@drawable/share" />
-
+                                        android:src="@drawable/bshare" />
+                                    
                                 </LinearLayout>
                             </ScrollView>
 
@@ -155,7 +154,10 @@
                         <TabWidget
                             android:id="@android:id/tabs"
                             android:layout_width="wrap_content"
-                            android:layout_height="36dp" >
+                            android:layout_height="36dp"
+                            android:background="#FFFFFF"
+                            android:tabStripEnabled="true" >
+
                         </TabWidget>
                     </HorizontalScrollView>
 
@@ -248,6 +250,14 @@
                                                 android:layout_weight="1"
                                                 android:text="Reset"
                                                 android:textSize="15sp" />
+
+                                            <ImageButton
+                                                android:id="@+id/sharelb"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:layout_weight="1"
+                                                android:src="@drawable/bshare" />
+
                                         </LinearLayout>
                                     </ScrollView>
 
@@ -291,14 +301,16 @@
 
                                             <Button
                                                 android:id="@+id/buttoncounter"
-                                                android:layout_width="fill_parent"
+                                                android:layout_width="wrap_content"
                                                 android:layout_height="wrap_content"
+                                                android:layout_weight="1"
                                                 android:text="@string/newreply" />
 
                                             <Button
                                                 android:id="@+id/mincounter"
-                                                android:layout_width="fill_parent"
+                                                android:layout_width="wrap_content"
                                                 android:layout_height="wrap_content"
+                                                android:layout_weight="1"
                                                 android:text="Menos" />
 
                                         </LinearLayout>
@@ -372,6 +384,14 @@
                                                 android:layout_weight="1"
                                                 android:text="Reset"
                                                 android:textSize="15sp" />
+
+                                            <ImageButton
+                                                android:id="@+id/sharen1"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:layout_weight="1"
+                                                android:src="@drawable/bshare" />
+
                                         </LinearLayout>
                                     </ScrollView>
 
@@ -445,6 +465,14 @@
                                                 android:layout_weight="1"
                                                 android:text="Reset"
                                                 android:textSize="15sp" />
+
+                                            <ImageButton
+                                                android:id="@+id/sharen2"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:layout_weight="1"
+                                                android:src="@drawable/bshare" />
+
                                         </LinearLayout>
                                     </ScrollView>
 
@@ -518,6 +546,14 @@
                                                 android:layout_weight="1"
                                                 android:text="Reset"
                                                 android:textSize="15sp" />
+                                            
+                                            <ImageButton
+                                                android:id="@+id/sharen3"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:layout_weight="1"
+                                                android:src="@drawable/bshare" />
+
                                         </LinearLayout>
                                     </ScrollView>
                                 </LinearLayout>
@@ -611,6 +647,14 @@
                                                 android:layout_weight="1"
                                                 android:text="Reset"
                                                 android:textSize="15sp" />
+
+                                            <ImageButton
+                                                android:id="@+id/shareeb"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:layout_weight="1"
+                                                android:src="@drawable/bshare" />
+
                                         </LinearLayout>
                                     </ScrollView>
                                 </LinearLayout>
