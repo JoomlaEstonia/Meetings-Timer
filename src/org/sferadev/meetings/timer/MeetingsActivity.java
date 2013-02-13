@@ -18,6 +18,7 @@ import android.widget.Button;
 import android.widget.Chronometer;
 import android.widget.EditText;
 import android.widget.ImageButton;
+import android.widget.LinearLayout;
 import android.widget.TabHost;
 import android.widget.TabHost.TabSpec;
 import android.widget.TextView;
@@ -66,6 +67,7 @@ public class MeetingsActivity extends TabActivity {
     String tms;
     
     int num = 0;
+    String numero;
     TextView counter;
     Button counterbutton;
     Button mincounter;
@@ -75,11 +77,58 @@ public class MeetingsActivity extends TabActivity {
     EditText ers3;
     EditText ers4;
     EditText ers5;
+    
+    TextView rc1;
+    TextView rc2;
+    TextView rc3;
+    TextView rc4;
+    TextView rc5;
+    TextView rc6;
+    TextView rc7;
+    TextView rc8;
+    TextView rc9;
+    TextView rc10;
+    TextView rc11;
+    TextView rc12;
+    TextView rc13;
+    TextView rc14;
+    TextView rc15;
+    TextView rc16;
+    TextView rc17;
+    TextView rc18;
+    TextView rc19;
+    TextView rc20;
+    TextView rc21;
+    
+    LinearLayout r1;
+    LinearLayout r2;
+    LinearLayout r3;
+    LinearLayout r4;
+    LinearLayout r5;
+    LinearLayout r6;
+    LinearLayout r7;
+    LinearLayout r8;
+    LinearLayout r9;
+    LinearLayout r10;
+    LinearLayout r11;
+    LinearLayout r12;
+    LinearLayout r13;
+    LinearLayout r14;
+    LinearLayout r15;
+    LinearLayout r16;
+    LinearLayout r17;
+    LinearLayout r18;
+    LinearLayout r19;
+    LinearLayout r20;
+    LinearLayout r21;
 
+    Chronometer crc2;
+    
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.layout);
+
         
         TabHost host = (TabHost)findViewById(android.R.id.tabhost);
         
@@ -233,15 +282,166 @@ public class MeetingsActivity extends TabActivity {
         ers4 = (EditText) findViewById(R.id.ers4);
         ers5 = (EditText) findViewById(R.id.ers5);
         
+        rc1 = (TextView) findViewById(R.id.rc1);
+        rc2 = (TextView) findViewById(R.id.rc2);
+        rc3 = (TextView) findViewById(R.id.rc3);
+        rc4 = (TextView) findViewById(R.id.rc4);
+        rc5 = (TextView) findViewById(R.id.rc5);
+        rc6 = (TextView) findViewById(R.id.rc6);
+        rc7 = (TextView) findViewById(R.id.rc7);
+        rc8 = (TextView) findViewById(R.id.rc8);
+        rc9 = (TextView) findViewById(R.id.rc9);
+        rc10 = (TextView) findViewById(R.id.rc10);
+        rc11 = (TextView) findViewById(R.id.rc11);
+        rc12 = (TextView) findViewById(R.id.rc12);
+        rc13 = (TextView) findViewById(R.id.rc13);
+        rc14 = (TextView) findViewById(R.id.rc14);
+        rc15 = (TextView) findViewById(R.id.rc15);
+        rc16 = (TextView) findViewById(R.id.rc16);
+        rc17 = (TextView) findViewById(R.id.rc17);
+        rc18 = (TextView) findViewById(R.id.rc18);
+        rc19 = (TextView) findViewById(R.id.rc19);
+        rc20 = (TextView) findViewById(R.id.rc20);
+        rc21 = (TextView) findViewById(R.id.rc21);
+        
+        r1 = (LinearLayout) findViewById(R.id.r1);
+        r2 = (LinearLayout) findViewById(R.id.r2);
+        r3 = (LinearLayout) findViewById(R.id.r3);
+        r4 = (LinearLayout) findViewById(R.id.r4);
+        r5 = (LinearLayout) findViewById(R.id.r5);
+        r6 = (LinearLayout) findViewById(R.id.r6);
+        r7 = (LinearLayout) findViewById(R.id.r7);
+        r8 = (LinearLayout) findViewById(R.id.r8);
+        r9 = (LinearLayout) findViewById(R.id.r9);
+        r10 = (LinearLayout) findViewById(R.id.r10);
+        r11 = (LinearLayout) findViewById(R.id.r11);
+        r12 = (LinearLayout) findViewById(R.id.r12);
+        r13 = (LinearLayout) findViewById(R.id.r13);
+        r14 = (LinearLayout) findViewById(R.id.r14);
+        r15 = (LinearLayout) findViewById(R.id.r15);
+        r16 = (LinearLayout) findViewById(R.id.r16);
+        r17 = (LinearLayout) findViewById(R.id.r17);
+        r18 = (LinearLayout) findViewById(R.id.r18);
+        r19 = (LinearLayout) findViewById(R.id.r19);
+        r20 = (LinearLayout) findViewById(R.id.r20);
+        r21 = (LinearLayout) findViewById(R.id.r21);
         
         counter = (TextView) findViewById(R.id.Tcounter);
         counterbutton = (Button) findViewById(R.id.buttoncounter);
         mincounter = (Button) findViewById(R.id.mincounter);
 
+        r1.setVisibility(View.GONE);
+        r2.setVisibility(View.GONE);
+        r3.setVisibility(View.GONE);
+        r4.setVisibility(View.GONE);
+        r5.setVisibility(View.GONE);
+        r6.setVisibility(View.GONE);
+        r7.setVisibility(View.GONE);
+        r8.setVisibility(View.GONE);
+        r9.setVisibility(View.GONE);
+        r10.setVisibility(View.GONE);
+        r11.setVisibility(View.GONE);
+        r12.setVisibility(View.GONE);
+        r13.setVisibility(View.GONE);
+        r14.setVisibility(View.GONE);
+        r15.setVisibility(View.GONE);
+        r16.setVisibility(View.GONE);
+        r17.setVisibility(View.GONE);
+        r18.setVisibility(View.GONE);
+        r19.setVisibility(View.GONE);
+        r20.setVisibility(View.GONE);
+        r21.setVisibility(View.GONE);
+        
         counterbutton.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
-                num++;
+            	num++;
                 counter.setText(Integer.toString(num));
+                if(num == 1){
+                	r1.setVisibility(View.VISIBLE);
+                	rc1.setText(cLectura.getText());
+                	crc2.setBase(SystemClock.elapsedRealtime());
+                	crc2.start();
+                }
+                if(num == 2){
+                	r2.setVisibility(View.VISIBLE);
+                	rc2.setText(crc2.getText()); 
+                }
+                if(num == 3){
+                	r3.setVisibility(View.VISIBLE);
+                	rc3.setText(cLectura.getText()); 
+                }
+                if(num == 4){
+                	r4.setVisibility(View.VISIBLE);
+                	rc4.setText(cLectura.getText()); 
+                }
+                if(num == 5){
+                	r5.setVisibility(View.VISIBLE);
+                	rc5.setText(cLectura.getText()); 
+                }
+                if(num == 6){
+                	r6.setVisibility(View.VISIBLE);
+                	rc6.setText(cLectura.getText()); 
+                }
+                if(num == 7){
+                	r7.setVisibility(View.VISIBLE);
+                	rc7.setText(cLectura.getText()); 
+                }
+                if(num == 8){
+                	r8.setVisibility(View.VISIBLE);
+                	rc8.setText(cLectura.getText()); 
+                }
+                if(num == 9){
+                	r9.setVisibility(View.VISIBLE);
+                	rc9.setText(cLectura.getText()); 
+                }
+                if(num == 10){
+                	r10.setVisibility(View.VISIBLE);
+                	rc10.setText(cLectura.getText()); 
+                }
+                if(num == 11){
+                	r11.setVisibility(View.VISIBLE);
+                	rc11.setText(cLectura.getText()); 
+                }
+                if(num == 12){
+                	r12.setVisibility(View.VISIBLE);
+                	rc12.setText(cLectura.getText()); 
+                }
+                if(num == 13){
+                	r13.setVisibility(View.VISIBLE);
+                	rc13.setText(cLectura.getText()); 
+                }
+                if(num == 14){
+                	r14.setVisibility(View.VISIBLE);
+                	rc14.setText(cLectura.getText()); 
+                }
+                if(num == 15){
+                	r15.setVisibility(View.VISIBLE);
+                	rc15.setText(cLectura.getText()); 
+                }
+                if(num == 16){
+                	r16.setVisibility(View.VISIBLE);
+                	rc16.setText(cLectura.getText()); 
+                }
+                if(num == 17){
+                	r17.setVisibility(View.VISIBLE);
+                	rc17.setText(cLectura.getText()); 
+                }
+                if(num == 18){
+                	r18.setVisibility(View.VISIBLE);
+                	rc18.setText(cLectura.getText()); 
+                }
+                if(num == 19){
+                	r19.setVisibility(View.VISIBLE);
+                	rc19.setText(cLectura.getText()); 
+                }
+                if(num == 20){
+                	r20.setVisibility(View.VISIBLE);
+                	rc20.setText(cLectura.getText()); 
+                }
+                if(num == 21){
+                	r21.setVisibility(View.VISIBLE);
+                	rc21.setText(cLectura.getText()); 
+                }
             }
         });
         
@@ -617,7 +817,8 @@ public class MeetingsActivity extends TabActivity {
         }
     
     };
-    
+
+	
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         getMenuInflater().inflate(R.menu.activity_main, menu);
