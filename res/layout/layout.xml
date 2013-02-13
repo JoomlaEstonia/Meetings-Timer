@@ -126,11 +126,12 @@
                                     android:layout_height="match_parent"
                                     android:orientation="vertical" >
 
-                                    <ProgressBar
-                                        android:id="@+id/progressBar1"
-                                        style="?android:attr/progressBarStyleHorizontal"
-                                        android:layout_width="match_parent"
-                                        android:layout_height="wrap_content" />
+                                    <ImageView
+                                        android:id="@+id/imageView1"
+                                        android:layout_width="fill_parent"
+                                        android:layout_height="fill_parent"
+                                        android:layout_gravity="center"
+                                        android:src="@drawable/spinner" />
 
                                     <TextView
                                         android:id="@+id/textView1"
@@ -155,7 +156,6 @@
                             android:id="@android:id/tabs"
                             android:layout_width="wrap_content"
                             android:layout_height="36dp"
-                            android:background="#FFFFFF"
                             android:tabStripEnabled="true" >
 
                         </TabWidget>
@@ -265,6 +265,7 @@
                                         android:id="@+id/LB3"
                                         android:layout_width="match_parent"
                                         android:layout_height="wrap_content"
+                                        android:layout_marginBottom="10dp"
                                         android:layout_marginTop="5dp" >
 
                                         <LinearLayout
@@ -304,14 +305,16 @@
                                                 android:layout_width="wrap_content"
                                                 android:layout_height="wrap_content"
                                                 android:layout_weight="1"
-                                                android:text="@string/newreply" />
+                                                android:text="@string/newreply"
+                                                android:textSize="15sp" />
 
                                             <Button
                                                 android:id="@+id/mincounter"
                                                 android:layout_width="wrap_content"
                                                 android:layout_height="wrap_content"
                                                 android:layout_weight="1"
-                                                android:text="Menos" />
+                                                android:text="@string/deletereply"
+                                                android:textSize="15sp" />
 
                                         </LinearLayout>
                                     </ScrollView>

@@ -285,17 +285,17 @@ public class MeetingsActivity extends TabActivity {
        		i.setType("text/plain");
        		i.putExtra(android.content.Intent.EXTRA_TEXT, "" +
        				getResources().getText(R.string.sGeneral) + " " +
-       				cGeneral.getText() +
+       				cGeneral.getText() + "\n" +
        				getResources().getText(R.string.sEB) + " " +
-       				cEb.getText() +
+       				cEb.getText() + "\n" +
        				getResources().getText(R.string.sReading) + " " +
-       				cLectura.getText() +
+       				cLectura.getText() + "\n" +
        				getResources().getText(R.string.sharereply) + " " +
-       				counter.getText() +
+       				counter.getText() + "\n" +
        				getResources().getText(R.string.sN1) + " " +
-       				cN1.getText() +
+       				cN1.getText() + "\n" +
        				getResources().getText(R.string.sN2) + " " +
-       				cN2.getText() +
+       				cN2.getText() + "\n" +
        				getResources().getText(R.string.sN3) + " " +
        				cN3.getText());
        		startActivity(Intent.createChooser(i,"Share via"));
@@ -321,7 +321,9 @@ public class MeetingsActivity extends TabActivity {
        		i.setType("text/plain");
        		i.putExtra(android.content.Intent.EXTRA_TEXT, "" +
        				getResources().getText(R.string.sReading) + " " +
-       				cLectura.getText());
+       				cLectura.getText() + "\n" +
+       				getResources().getText(R.string.sharereply) + " " +
+       				counter.getText());
        		startActivity(Intent.createChooser(i,"Share via"));
         }
     
@@ -373,24 +375,18 @@ public class MeetingsActivity extends TabActivity {
     public boolean onOptionsItemSelected(MenuItem item) {
         switch (item.getItemId()) {
            case R.id.shareWith:
-        	   Intent i = new Intent(android.content.Intent.ACTION_SEND);
-           		i.setType("text/plain");
-           		i.putExtra(android.content.Intent.EXTRA_TEXT, "" +
-           				getResources().getText(R.string.sGeneral) + " " +
-           				cGeneral.getText() +
-           				getResources().getText(R.string.sEB) + " " +
-           				cEb.getText() +
-           				getResources().getText(R.string.sReading) + " " +
-           				cLectura.getText() +
-           				getResources().getText(R.string.sharereply) + " " +
-           				counter.getText() +
-           				getResources().getText(R.string.sN1) + " " +
-           				cN1.getText() +
-           				getResources().getText(R.string.sN2) + " " +
-           				cN2.getText() +
-           				getResources().getText(R.string.sN3) + " " +
-           				cN3.getText());
-           		startActivity(Intent.createChooser(i,"Share via"));
+        	   try
+               { Intent i = new Intent(Intent.ACTION_SEND);  
+                 i.setType("text/plain");
+                 i.putExtra(Intent.EXTRA_SUBJECT, "Meetings Timer");
+                 String mInfo = "\nCheck out the App!\n\n";
+                 mInfo = mInfo + "https://play.google.com/store/apps/details?id=org.sferadev.meetings.timer \n\n";
+                 i.putExtra(Intent.EXTRA_TEXT, mInfo);  
+                 startActivity(Intent.createChooser(i, "Choose App"));
+               }
+               catch(Exception e)
+               { //e.toString();
+               }   
            		break;
            		
            		case R.id.about:

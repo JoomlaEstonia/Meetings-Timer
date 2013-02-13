@@ -11,16 +11,17 @@
     <string name="lectura">Reading</string>
     <string name="lecturacounter">Number of replies</string>
     <string name="newreply">New Reply</string>
-    <string name="sharereply">\nNumber of replies:</string>
+    <string name="deletereply">Delete Reply</string>
+    <string name="sharereply">Number of replies:</string>
     <string name="partes">Sections</string>
     <string name="escuela">School</string>
     <string name="toast">App is going to background. It continues working but can be closed without your confirmation.</string>
-    <string name="sN1">\nNumber 1: </string>
-    <string name="sN2">\nNumber 2: </string>
-    <string name="sN3">\nNumber 3: </string>
-    <string name="sReading">\nReading: </string>
+    <string name="sN1">Number 1: </string>
+    <string name="sN2">Number 2: </string>
+    <string name="sN3">Number 3: </string>
+    <string name="sReading">Reading: </string>
     <string name="sGeneral">General: </string>
-    <string name="sEB">\nBible Study: </string>
+    <string name="sEB">Bible Study: </string>
     <string name="prompt">0</string>
     
     <string name="about">About</string>

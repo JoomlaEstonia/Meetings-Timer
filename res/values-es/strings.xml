@@ -11,16 +11,17 @@
     <string name="lectura">Lectura</string>
     <string name="lecturacounter">Número de repuestas</string>
     <string name="newreply">Nueva Respuesta</string>
-    <string name="sharereply">\nNúmero de repuestas:</string>
+    <string name="deletereply">Eliminar Respuesta</string>
+    <string name="sharereply">Número de repuestas:</string>
     <string name="partes">Partes</string>
     <string name="escuela">Escuela</string>
 	<string name="toast">La App funciona oculta. Continúa contando pero puede ser cerrada sin tu permiso.</string>
-    <string name="sN1">\nNúmero 1: </string>
-    <string name="sN2">\nNúmero 2: </string>
-    <string name="sN3">\nNúmero 3: </string>
-    <string name="sReading">\nLectura: </string>
+    <string name="sN1">Número 1: </string>
+    <string name="sN2">Número 2: </string>
+    <string name="sN3">Número 3: </string>
+    <string name="sReading">Lectura: </string>
     <string name="sGeneral">General: </string>
-    <string name="sEB">\nEstudio Bíblico: </string>
+    <string name="sEB">Estudio Bíblico: </string>
     
     <string name="about">Acerca</string>
     <string name="about_title">Acerca de JW Meetings Timer</string>
