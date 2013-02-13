@@ -8,6 +8,12 @@
     <string name="Restart">Reinicia</string>
     <string name="general">General</string>
     <string name="eb">Estudio Bíblico</string>
+    <string name="rs">Reunión de Servicio</string>
+    <string name="rs1">Parte 1</string>
+    <string name="rs2">Parte 2</string>
+    <string name="rs3">Parte 3</string>
+    <string name="rs4">Parte 4</string>
+    <string name="rs5">Parte 5</string>
     <string name="lectura">Lectura</string>
     <string name="lecturacounter">Número de repuestas</string>
     <string name="newreply">Nueva Respuesta</string>

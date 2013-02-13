@@ -8,6 +8,12 @@
     <string name="Restart">Restart</string>
     <string name="general">General</string>
     <string name="eb">Bible Study</string>
+    <string name="rs">Service Meeting</string>
+    <string name="rs1">Part 1</string>
+    <string name="rs2">Part 2</string>
+    <string name="rs3">Part 3</string>
+    <string name="rs4">Part 4</string>
+    <string name="rs5">Part 5</string>
     <string name="lectura">Reading</string>
     <string name="lecturacounter">Number of replies</string>
     <string name="newreply">New Reply</string>

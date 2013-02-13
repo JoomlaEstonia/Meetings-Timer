@@ -38,16 +38,22 @@ public final class R {
         public static final int LinearLayout08=0x7f070034;
         public static final int LinearLayout09=0x7f07003a;
         public static final int LinearLayout10=0x7f07003e;
+        public static final int LinearLayout11=0x7f070056;
+        public static final int LinearLayout13=0x7f070052;
         public static final int N1_1=0x7f070025;
         public static final int N1_2=0x7f070029;
         public static final int N2_1=0x7f07002f;
         public static final int N2_2=0x7f070033;
         public static final int N3_1=0x7f070039;
         public static final int N3_2=0x7f07003d;
+        public static final int RS=0x7f07004f;
         public static final int Row1=0x7f070046;
         public static final int Row2=0x7f07004a;
         public static final int ScrollView01=0x7f070007;
         public static final int ScrollView02=0x7f07000b;
+        public static final int ScrollView03=0x7f070055;
+        public static final int ScrollView04=0x7f070050;
+        public static final int ScrollView05=0x7f070051;
         public static final int TMS=0x7f070013;
         public static final int TMSA=0x7f070014;
         public static final int Tcounter=0x7f070021;
@@ -58,7 +64,7 @@ public final class R {
         public static final int TextView05=0x7f070031;
         public static final int TextView06=0x7f07003b;
         public static final int TextView07=0x7f070017;
-        public static final int about=0x7f070050;
+        public static final int about=0x7f070074;
         public static final int button_github=0x7f070003;
         public static final int button_paypal=0x7f070004;
         public static final int buttoncounter=0x7f070023;
@@ -68,6 +74,16 @@ public final class R {
         public static final int cn1=0x7f070028;
         public static final int cn2=0x7f070032;
         public static final int cn3=0x7f07003c;
+        public static final int crs1=0x7f070054;
+        public static final int crs2=0x7f07005c;
+        public static final int crs3=0x7f070062;
+        public static final int crs4=0x7f070068;
+        public static final int crs5=0x7f07006e;
+        public static final int ers1=0x7f070053;
+        public static final int ers2=0x7f07005b;
+        public static final int ers3=0x7f070061;
+        public static final int ers4=0x7f070067;
+        public static final int ers5=0x7f07006d;
         public static final int imageView1=0x7f070012;
         public static final int mincounter=0x7f070024;
         public static final int reseteb=0x7f07004d;
@@ -76,28 +92,48 @@ public final class R {
         public static final int resetn1=0x7f07002d;
         public static final int resetn2=0x7f070037;
         public static final int resetn3=0x7f070041;
+        public static final int resetrs1=0x7f070059;
+        public static final int resetrs2=0x7f07005f;
+        public static final int resetrs3=0x7f070065;
+        public static final int resetrs4=0x7f07006b;
+        public static final int resetrs5=0x7f070071;
         public static final int scrollView1=0x7f070000;
         public static final int scrollView2=0x7f070011;
         public static final int scrollView3=0x7f070006;
-        public static final int shareWith=0x7f07004f;
+        public static final int shareWith=0x7f070073;
         public static final int shareeb=0x7f07004e;
         public static final int sharegeneral=0x7f070010;
         public static final int sharelb=0x7f07001e;
         public static final int sharen1=0x7f07002e;
         public static final int sharen2=0x7f070038;
         public static final int sharen3=0x7f070042;
+        public static final int sharers1=0x7f07005a;
+        public static final int sharers2=0x7f070060;
+        public static final int sharers3=0x7f070066;
+        public static final int sharers4=0x7f07006c;
+        public static final int sharers5=0x7f070072;
         public static final int starteb=0x7f07004b;
         public static final int startgeneral=0x7f07000d;
         public static final int startlb=0x7f07001b;
         public static final int startn1=0x7f07002b;
         public static final int startn2=0x7f070035;
         public static final int startn3=0x7f07003f;
+        public static final int startrs1=0x7f070057;
+        public static final int startrs2=0x7f07005d;
+        public static final int startrs3=0x7f070063;
+        public static final int startrs4=0x7f070069;
+        public static final int startrs5=0x7f07006f;
         public static final int stopeb=0x7f07004c;
         public static final int stopgeneral=0x7f07000e;
         public static final int stoplb=0x7f07001c;
         public static final int stopn1=0x7f07002c;
         public static final int stopn2=0x7f070036;
         public static final int stopn3=0x7f070040;
+        public static final int stoprs1=0x7f070058;
+        public static final int stoprs2=0x7f07005e;
+        public static final int stoprs3=0x7f070064;
+        public static final int stoprs4=0x7f07006a;
+        public static final int stoprs5=0x7f070070;
         public static final int textView1=0x7f070001;
         public static final int textView2=0x7f070002;
         public static final int textView3=0x7f070005;
@@ -113,34 +149,72 @@ public final class R {
         public static final int Restart=0x7f040005;
         public static final int Start=0x7f040003;
         public static final int Stop=0x7f040004;
-        public static final int about=0x7f040017;
-        public static final int about_donations=0x7f04001c;
-        public static final int about_text=0x7f040019;
-        public static final int about_title=0x7f040018;
+        public static final int about=0x7f04001d;
+        public static final int about_donations=0x7f040022;
+        public static final int about_text=0x7f04001f;
+        public static final int about_title=0x7f04001e;
         public static final int app_name=0x7f040000;
-        public static final int button_github=0x7f04001a;
-        public static final int button_paypal=0x7f04001b;
-        public static final int deletereply=0x7f04000b;
+        public static final int button_github=0x7f040020;
+        public static final int button_paypal=0x7f040021;
+        public static final int deletereply=0x7f040011;
         public static final int eb=0x7f040007;
-        public static final int escuela=0x7f04000e;
+        public static final int escuela=0x7f040014;
         public static final int general=0x7f040006;
-        public static final int lectura=0x7f040008;
-        public static final int lecturacounter=0x7f040009;
+        public static final int lectura=0x7f04000e;
+        public static final int lecturacounter=0x7f04000f;
         public static final int menu_settings=0x7f040002;
-        public static final int newreply=0x7f04000a;
-        public static final int partes=0x7f04000d;
-        public static final int prompt=0x7f040016;
-        public static final int sEB=0x7f040015;
-        public static final int sGeneral=0x7f040014;
-        public static final int sN1=0x7f040010;
-        public static final int sN2=0x7f040011;
-        public static final int sN3=0x7f040012;
-        public static final int sReading=0x7f040013;
-        public static final int sharereply=0x7f04000c;
+        public static final int newreply=0x7f040010;
+        public static final int partes=0x7f040013;
+        public static final int prompt=0x7f04001c;
+        public static final int rs=0x7f040008;
+        public static final int rs1=0x7f040009;
+        public static final int rs2=0x7f04000a;
+        public static final int rs3=0x7f04000b;
+        public static final int rs4=0x7f04000c;
+        public static final int rs5=0x7f04000d;
+        public static final int sEB=0x7f04001b;
+        public static final int sGeneral=0x7f04001a;
+        public static final int sN1=0x7f040016;
+        public static final int sN2=0x7f040017;
+        public static final int sN3=0x7f040018;
+        public static final int sReading=0x7f040019;
+        public static final int sharereply=0x7f040012;
         public static final int title_activity_main=0x7f040001;
-        public static final int toast=0x7f04000f;
+        public static final int toast=0x7f040015;
     }
     public static final class style {
+        /** 
+        Base application theme for API 11+. This theme completely replaces
+        AppBaseTheme from res/values/styles.xml on API 11+ devices.
+    
+ API 11 theme customizations can go here. 
+
+        Base application theme for API 11+. This theme completely replaces
+        AppBaseTheme from res/values/styles.xml on API 11+ devices.
+    
+ API 11 theme customizations can go here. 
+
+        Base application theme for API 14+. This theme completely replaces
+        AppBaseTheme from BOTH res/values/styles.xml and
+        res/values-v11/styles.xml on API 14+ devices.
+    
+ API 14 theme customizations can go here. 
+
+        Base application theme for API 11+. This theme completely replaces
+        AppBaseTheme from res/values/styles.xml on API 11+ devices.
+    
+ API 11 theme customizations can go here. 
+
+        Base application theme for API 11+. This theme completely replaces
+        AppBaseTheme from res/values/styles.xml on API 11+ devices.
+    
+ API 11 theme customizations can go here. 
+
+        Base application theme for API 11+. This theme completely replaces
+        AppBaseTheme from res/values/styles.xml on API 11+ devices.
+    
+ API 11 theme customizations can go here. 
+         */
         public static final int AppTheme=0x7f050000;
     }
 }
