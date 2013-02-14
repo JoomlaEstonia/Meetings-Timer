@@ -122,7 +122,7 @@ public class MeetingsActivity extends TabActivity {
     LinearLayout r20;
     LinearLayout r21;
 
-    Chronometer crc2;
+    TextView crc2;
     
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -359,88 +359,126 @@ public class MeetingsActivity extends TabActivity {
                 if(num == 1){
                 	r1.setVisibility(View.VISIBLE);
                 	rc1.setText(cLectura.getText());
-                	crc2.setBase(SystemClock.elapsedRealtime());
-                	crc2.start();
+                	rc2.setBase(SystemClock.elapsedRealtime());
+                	rc2.start();
                 }
                 if(num == 2){
                 	r2.setVisibility(View.VISIBLE);
-                	rc2.setText(crc2.getText()); 
+                	rc2.stop();
+                	rc3.setBase(SystemClock.elapsedRealtime());
+                	rc3.start();
                 }
                 if(num == 3){
                 	r3.setVisibility(View.VISIBLE);
-                	rc3.setText(cLectura.getText()); 
+                	rc3.stop();
+                	rc4.setBase(SystemClock.elapsedRealtime());
+                	rc4.start();
                 }
                 if(num == 4){
                 	r4.setVisibility(View.VISIBLE);
-                	rc4.setText(cLectura.getText()); 
+                	rc4.stop();
+                	rc5.setBase(SystemClock.elapsedRealtime());
+                	rc5.start();
                 }
                 if(num == 5){
                 	r5.setVisibility(View.VISIBLE);
-                	rc5.setText(cLectura.getText()); 
+                	rc5.stop();
+                	rc6.setBase(SystemClock.elapsedRealtime());
+                	rc6.start();
                 }
                 if(num == 6){
                 	r6.setVisibility(View.VISIBLE);
-                	rc6.setText(cLectura.getText()); 
+                	rc6.stop();
+                	rc7.setBase(SystemClock.elapsedRealtime());
+                	rc7.start();
                 }
                 if(num == 7){
                 	r7.setVisibility(View.VISIBLE);
-                	rc7.setText(cLectura.getText()); 
+                	rc7.stop();
+                	rc8.setBase(SystemClock.elapsedRealtime());
+                	rc8.start();
                 }
                 if(num == 8){
                 	r8.setVisibility(View.VISIBLE);
-                	rc8.setText(cLectura.getText()); 
+                	rc8.stop();
+                	rc9.setBase(SystemClock.elapsedRealtime());
+                	rc9.start();
                 }
                 if(num == 9){
                 	r9.setVisibility(View.VISIBLE);
-                	rc9.setText(cLectura.getText()); 
+                	rc9.stop();
+                	rc10.setBase(SystemClock.elapsedRealtime());
+                	rc10.start();
                 }
                 if(num == 10){
                 	r10.setVisibility(View.VISIBLE);
-                	rc10.setText(cLectura.getText()); 
+                	rc10.stop();
+                	rc11.setBase(SystemClock.elapsedRealtime());
+                	rc11.start();
                 }
                 if(num == 11){
                 	r11.setVisibility(View.VISIBLE);
-                	rc11.setText(cLectura.getText()); 
+                	rc11.stop();
+                	rc12.setBase(SystemClock.elapsedRealtime());
+                	rc12.start();
                 }
                 if(num == 12){
                 	r12.setVisibility(View.VISIBLE);
-                	rc12.setText(cLectura.getText()); 
+                	rc12.stop();
+                	rc13.setBase(SystemClock.elapsedRealtime());
+                	rc13.start();
                 }
                 if(num == 13){
                 	r13.setVisibility(View.VISIBLE);
-                	rc13.setText(cLectura.getText()); 
+                	rc13.stop();
+                	rc14.setBase(SystemClock.elapsedRealtime());
+                	rc14.start();
                 }
                 if(num == 14){
                 	r14.setVisibility(View.VISIBLE);
-                	rc14.setText(cLectura.getText()); 
+                	rc14.stop();
+                	rc15.setBase(SystemClock.elapsedRealtime());
+                	rc15.start();
                 }
                 if(num == 15){
                 	r15.setVisibility(View.VISIBLE);
-                	rc15.setText(cLectura.getText()); 
+                	rc15.stop();
+                	rc16.setBase(SystemClock.elapsedRealtime());
+                	rc16.start();
                 }
                 if(num == 16){
                 	r16.setVisibility(View.VISIBLE);
-                	rc16.setText(cLectura.getText()); 
+                	rc16.stop();
+                	rc17.setBase(SystemClock.elapsedRealtime());
+                	rc17.start();
                 }
                 if(num == 17){
                 	r17.setVisibility(View.VISIBLE);
-                	rc17.setText(cLectura.getText()); 
+                	rc17.stop();
+                	rc18.setBase(SystemClock.elapsedRealtime());
+                	rc18.start();
                 }
                 if(num == 18){
                 	r18.setVisibility(View.VISIBLE);
-                	rc18.setText(cLectura.getText()); 
+                	rc18.stop();
+                	rc19.setBase(SystemClock.elapsedRealtime());
+                	rc19.start();
                 }
                 if(num == 19){
                 	r19.setVisibility(View.VISIBLE);
-                	rc19.setText(cLectura.getText()); 
+                	rc19.stop();
+                	rc20.setBase(SystemClock.elapsedRealtime());
+                	rc20.start();
                 }
                 if(num == 20){
                 	r20.setVisibility(View.VISIBLE);
-                	rc20.setText(cLectura.getText()); 
+                	rc20.stop();
+                	rc21.setBase(SystemClock.elapsedRealtime());
+                	rc21.start();
                 }
                 if(num == 21){
                 	r21.setVisibility(View.VISIBLE);
-                	rc21.setText(cLectura.getText()); 
+                	rc21.stop();
                 }
             }
         });
