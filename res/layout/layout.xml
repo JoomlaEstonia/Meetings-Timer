@@ -341,7 +341,7 @@
                                                     android:layout_width="wrap_content"
                                                     android:layout_height="wrap_content"
                                                     android:layout_marginLeft="30dp"
-                                                    android:text="Reply 1"
+                                                    android:text="@string/reply1"
                                                     android:textAppearance="?android:attr/textAppearanceLarge" />
 
                                                 <TextView                                                    android:id="@+id/rc1"
@@ -363,7 +363,7 @@
                                                     android:layout_width="wrap_content"
                                                     android:layout_height="wrap_content"
                                                     android:layout_marginLeft="30dp"
-                                                    android:text="Reply 1"
+                                                    android:text="@string/reply2"
                                                     android:textAppearance="?android:attr/textAppearanceLarge" />
 
                                                 <Chronometer
@@ -386,7 +386,7 @@
                                                     android:layout_width="wrap_content"
                                                     android:layout_height="wrap_content"
                                                     android:layout_marginLeft="30dp"
-                                                    android:text="Reply 1"
+                                                    android:text="@string/reply3"
                                                     android:textAppearance="?android:attr/textAppearanceLarge" />
 
                                                 <Chronometer
@@ -409,7 +409,7 @@
                                                     android:layout_width="wrap_content"
                                                     android:layout_height="wrap_content"
                                                     android:layout_marginLeft="30dp"
-                                                    android:text="Reply 1"
+                                                    android:text="@string/reply4"
                                                     android:textAppearance="?android:attr/textAppearanceLarge" />
 
                                                 <Chronometer
@@ -432,7 +432,7 @@
                                                     android:layout_width="wrap_content"
                                                     android:layout_height="wrap_content"
                                                     android:layout_marginLeft="30dp"
-                                                    android:text="Reply 1"
+                                                    android:text="@string/reply5"
                                                     android:textAppearance="?android:attr/textAppearanceLarge" />
 
                                                 <Chronometer
@@ -455,7 +455,7 @@
                                                     android:layout_width="wrap_content"
                                                     android:layout_height="wrap_content"
                                                     android:layout_marginLeft="30dp"
-                                                    android:text="Reply 1"
+                                                    android:text="@string/reply6"
                                                     android:textAppearance="?android:attr/textAppearanceLarge" />
 
                                                 <Chronometer
@@ -478,7 +478,7 @@
                                                     android:layout_width="wrap_content"
                                                     android:layout_height="wrap_content"
                                                     android:layout_marginLeft="30dp"
-                                                    android:text="Reply 1"
+                                                    android:text="@string/reply7"
                                                     android:textAppearance="?android:attr/textAppearanceLarge" />
 
                                                 <Chronometer
@@ -501,7 +501,7 @@
                                                     android:layout_width="wrap_content"
                                                     android:layout_height="wrap_content"
                                                     android:layout_marginLeft="30dp"
-                                                    android:text="Reply 1"
+                                                    android:text="@string/reply8"
                                                     android:textAppearance="?android:attr/textAppearanceLarge" />
 
                                                 <Chronometer
@@ -524,7 +524,7 @@
                                                     android:layout_width="wrap_content"
                                                     android:layout_height="wrap_content"
                                                     android:layout_marginLeft="30dp"
-                                                    android:text="Reply 1"
+                                                    android:text="@string/reply9"
                                                     android:textAppearance="?android:attr/textAppearanceLarge" />
 
                                                 <Chronometer
@@ -547,7 +547,7 @@
                                                     android:layout_width="wrap_content"
                                                     android:layout_height="wrap_content"
                                                     android:layout_marginLeft="30dp"
-                                                    android:text="Reply 1"
+                                                    android:text="@string/reply10"
                                                     android:textAppearance="?android:attr/textAppearanceLarge" />
 
                                                 <Chronometer
@@ -570,7 +570,7 @@
                                                     android:layout_width="wrap_content"
                                                     android:layout_height="wrap_content"
                                                     android:layout_marginLeft="30dp"
-                                                    android:text="Reply 1"
+                                                    android:text="@string/reply11"
                                                     android:textAppearance="?android:attr/textAppearanceLarge" />
 
                                                 <Chronometer
@@ -593,7 +593,7 @@
                                                     android:layout_width="wrap_content"
                                                     android:layout_height="wrap_content"
                                                     android:layout_marginLeft="30dp"
-                                                    android:text="Reply 1"
+                                                    android:text="@string/reply12"
                                                     android:textAppearance="?android:attr/textAppearanceLarge" />
 
                                                 <Chronometer
@@ -616,7 +616,7 @@
                                                     android:layout_width="wrap_content"
                                                     android:layout_height="wrap_content"
                                                     android:layout_marginLeft="30dp"
-                                                    android:text="Reply 1"
+                                                    android:text="@string/reply13"
                                                     android:textAppearance="?android:attr/textAppearanceLarge" />
 
                                                 <Chronometer
@@ -639,7 +639,7 @@
                                                     android:layout_width="wrap_content"
                                                     android:layout_height="wrap_content"
                                                     android:layout_marginLeft="30dp"
-                                                    android:text="Reply 1"
+                                                    android:text="@string/reply14"
                                                     android:textAppearance="?android:attr/textAppearanceLarge" />
 
                                                 <Chronometer
@@ -662,7 +662,7 @@
                                                     android:layout_width="wrap_content"
                                                     android:layout_height="wrap_content"
                                                     android:layout_marginLeft="30dp"
-                                                    android:text="Reply 1"
+                                                    android:text="@string/reply15"
                                                     android:textAppearance="?android:attr/textAppearanceLarge" />
 
                                                 <Chronometer
@@ -685,7 +685,7 @@
                                                     android:layout_width="wrap_content"
                                                     android:layout_height="wrap_content"
                                                     android:layout_marginLeft="30dp"
-                                                    android:text="Reply 1"
+                                                    android:text="@string/reply16"
                                                     android:textAppearance="?android:attr/textAppearanceLarge" />
 
                                                 <Chronometer
@@ -708,7 +708,7 @@
                                                     android:layout_width="wrap_content"
                                                     android:layout_height="wrap_content"
                                                     android:layout_marginLeft="30dp"
-                                                    android:text="Reply 1"
+                                                    android:text="@string/reply17"
                                                     android:textAppearance="?android:attr/textAppearanceLarge" />
 
                                                 <Chronometer
@@ -731,7 +731,7 @@
                                                     android:layout_width="wrap_content"
                                                     android:layout_height="wrap_content"
                                                     android:layout_marginLeft="30dp"
-                                                    android:text="Reply 1"
+                                                    android:text="@string/reply18"
                                                     android:textAppearance="?android:attr/textAppearanceLarge" />
 
                                                 <Chronometer
@@ -754,7 +754,7 @@
                                                     android:layout_width="wrap_content"
                                                     android:layout_height="wrap_content"
                                                     android:layout_marginLeft="30dp"
-                                                    android:text="Reply 1"
+                                                    android:text="@string/reply19"
                                                     android:textAppearance="?android:attr/textAppearanceLarge" />
 
                                                 <Chronometer
@@ -777,7 +777,7 @@
                                                     android:layout_width="wrap_content"
                                                     android:layout_height="wrap_content"
                                                     android:layout_marginLeft="30dp"
-                                                    android:text="Reply 1"
+                                                    android:text="@string/reply20"
                                                     android:textAppearance="?android:attr/textAppearanceLarge" />
 
                                                 <Chronometer
@@ -800,7 +800,7 @@
                                                     android:layout_width="wrap_content"
                                                     android:layout_height="wrap_content"
                                                     android:layout_marginLeft="30dp"
-                                                    android:text="Reply 1"
+                                                    android:text="@string/reply21"
                                                     android:textAppearance="?android:attr/textAppearanceLarge" />
 
                                                 <Chronometer

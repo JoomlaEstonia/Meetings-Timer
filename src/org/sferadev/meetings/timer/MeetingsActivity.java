@@ -749,7 +749,29 @@ public class MeetingsActivity extends TabActivity {
        				getResources().getText(R.string.sReading) + " " +
        				cLectura.getText() + "\n" +
        				getResources().getText(R.string.sharereply) + " " +
-       				counter.getText());
+       				counter.getText()
+       				+ "\n" + getResources().getText(R.string.reply1) + ": " + rc1.getText()
+       				+ "\n" + getResources().getText(R.string.reply2) + ": " + rc2.getText()
+       				+ "\n" + getResources().getText(R.string.reply3) + ": " + rc3.getText()
+       				+ "\n" + getResources().getText(R.string.reply4) + ": " + rc4.getText()
+       				+ "\n" + getResources().getText(R.string.reply5) + ": " + rc5.getText()
+       				+ "\n" + getResources().getText(R.string.reply6) + ": " + rc6.getText()
+       				+ "\n" + getResources().getText(R.string.reply7) + ": " + rc7.getText()
+       				+ "\n" + getResources().getText(R.string.reply8) + ": " + rc8.getText()
+       				+ "\n" + getResources().getText(R.string.reply9) + ": " + rc9.getText()
+       				+ "\n" + getResources().getText(R.string.reply10) + ": " + rc10.getText()
+       				+ "\n" + getResources().getText(R.string.reply11) + ": " + rc11.getText()
+       				+ "\n" + getResources().getText(R.string.reply12) + ": " + rc12.getText()
+       				+ "\n" + getResources().getText(R.string.reply13) + ": " + rc13.getText()
+       				+ "\n" + getResources().getText(R.string.reply14) + ": " + rc14.getText()
+       				+ "\n" + getResources().getText(R.string.reply15) + ": " + rc15.getText()
+       				+ "\n" + getResources().getText(R.string.reply16) + ": " + rc16.getText()
+       				+ "\n" + getResources().getText(R.string.reply17) + ": " + rc17.getText()
+       				+ "\n" + getResources().getText(R.string.reply18) + ": " + rc18.getText()
+       				+ "\n" + getResources().getText(R.string.reply19) + ": " + rc19.getText()
+       				+ "\n" + getResources().getText(R.string.reply20) + ": " + rc20.getText()
+       				+ "\n" + getResources().getText(R.string.reply21) + ": " + rc21.getText()
+       				);
        		startActivity(Intent.createChooser(i,"Share via"));
         }
     

@@ -15,10 +15,10 @@
     <string name="rs4">Parte 4</string>
     <string name="rs5">Parte 5</string>
     <string name="lectura">Lectura</string>
-    <string name="lecturacounter">Número de repuestas</string>
-    <string name="newreply">Nueva Respuesta</string>
-    <string name="deletereply">Eliminar Respuesta</string>
-    <string name="sharereply">Número de repuestas:</string>
+    <string name="lecturacounter">Número de comentarios</string>
+    <string name="newreply">Nuevo comentario</string>
+    <string name="deletereply">Eliminar comentario</string>
+    <string name="sharereply">Número de comentarios:</string>
     <string name="partes">Partes</string>
     <string name="escuela">Escuela</string>
 	<string name="toast">La App funciona oculta. Continúa contando pero puede ser cerrada sin tu permiso.</string>
@@ -36,5 +36,27 @@
     <string name="button_github">OpenSource en GitHub</string>
     <string name="button_paypal">Apoya la App en PayPal</string>
     <string name="about_donations">Las donaciones PayPal no afectan la funcion de la App solo contribuyen con el desarrollador.</string>
+    
+    <string name="reply1">Comentario 1</string>
+    <string name="reply2">Comentario 2</string>
+    <string name="reply3">Comentario 3</string>
+    <string name="reply4">Comentario 4</string>
+    <string name="reply5">Comentario 5</string>
+    <string name="reply6">Comentario 6</string>
+    <string name="reply7">Comentario 7</string>
+    <string name="reply8">Comentario 8</string>
+    <string name="reply9">Comentario 9</string>
+    <string name="reply10">Comentario 10</string>
+    <string name="reply11">Comentario 11</string>
+    <string name="reply12">Comentario 12</string>
+    <string name="reply13">Comentario 13</string>
+    <string name="reply14">Comentario 14</string>
+    <string name="reply15">Comentario 15</string>
+    <string name="reply16">Comentario 16</string>
+    <string name="reply17">Comentario 17</string>
+    <string name="reply18">Comentario 18</string>
+    <string name="reply19">Comentario 19</string>
+    <string name="reply20">Comentario 20</string>
+    <string name="reply21">Comentario 21</string>
     
 </resources>
