@@ -16,7 +16,6 @@
             android:layout_height="match_parent" >
 
             <TabHost
-                xmlns:android="http://schemas.android.com/apk/res/android"
                 android:id="@android:id/tabhost"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
@@ -269,6 +268,7 @@
                                         android:layout_marginTop="5dp" >
 
                                         <LinearLayout
+                                            android:id="@+id/replies"
                                             android:layout_width="match_parent"
                                             android:layout_height="match_parent" >
 
@@ -297,6 +297,7 @@
                                         android:layout_height="wrap_content" >
 
                                         <LinearLayout
+                                            android:id="@+id/breplies"
                                             android:layout_width="match_parent"
                                             android:layout_height="match_parent" >
 
@@ -305,15 +306,7 @@
                                                 android:layout_width="wrap_content"
                                                 android:layout_height="wrap_content"
                                                 android:layout_weight="1"
-                                                android:text="@string/newreply"
-                                                android:textSize="15sp" />
-
-                                            <Button
-                                                android:id="@+id/mincounter"
-                                                android:layout_width="wrap_content"
-                                                android:layout_height="wrap_content"
-                                                android:layout_weight="1"
-                                                android:text="@string/deletereply"
+                                                android:text="Text"
                                                 android:textSize="15sp" />
 
                                         </LinearLayout>
@@ -330,6 +323,30 @@
                                             android:orientation="vertical" >
 
                                             <LinearLayout
+                                                android:id="@+id/lanalisis"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:layout_marginBottom="10dp"
+                                                android:layout_marginTop="10dp" >
+
+                                                <TextView
+                                                    android:id="@+id/TextView09"
+                                                    android:layout_width="wrap_content"
+                                                    android:layout_height="wrap_content"
+                                                    android:layout_marginLeft="30dp"
+                                                    android:text="@string/analisis"
+                                                    android:textAppearance="?android:attr/textAppearanceLarge" />
+
+                                                <TextView
+                                                    android:id="@+id/analisis"
+                                                    android:layout_width="fill_parent"
+                                                    android:layout_height="wrap_content"
+                                                    android:layout_marginLeft="35dp"
+                                                    android:textAppearance="?android:attr/textAppearanceLarge" />
+
+                                            </LinearLayout>
+
+                                            <LinearLayout
                                                 android:id="@+id/r1"
                                                 android:layout_width="match_parent"
                                                 android:layout_height="wrap_content"
@@ -344,7 +361,7 @@
                                                     android:text="@string/reply1"
                                                     android:textAppearance="?android:attr/textAppearanceLarge" />
 
-                                                <TextView                                                    android:id="@+id/rc1"
+                                                <Chronometer                                                    android:id="@+id/rc1"
                                                     android:layout_width="fill_parent"
                                                     android:layout_height="wrap_content"
                                                     android:layout_marginLeft="35dp"

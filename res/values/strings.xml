@@ -60,6 +60,7 @@
     <string name="reply20">Reply 20</string>
     <string name="reply21">Reply 21</string>
 
-    
+    <string name="analisis">Highlights</string>
+    <string name="banalisis">End Highlights</string>
     
 </resources>

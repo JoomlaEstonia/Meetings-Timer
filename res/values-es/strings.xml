@@ -59,4 +59,7 @@
     <string name="reply20">Comentario 20</string>
     <string name="reply21">Comentario 21</string>
     
+    <string name="analisis">Puntos Sobresalientes</string>
+    <string name="banalisis">Finalizar PS</string>
+    
 </resources>

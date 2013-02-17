@@ -66,9 +66,10 @@ public class MeetingsActivity extends TabActivity {
     String eb;
     String tms;
     
-    int num = 0;
+    int num = -1;
     String numero;
     TextView counter;
+    TextView analisis;
     Button counterbutton;
     Button mincounter;
     
@@ -78,7 +79,7 @@ public class MeetingsActivity extends TabActivity {
     EditText ers4;
     EditText ers5;
     
-    TextView rc1;
+    Chronometer rc1;
     Chronometer rc2;
     Chronometer rc3;
     Chronometer rc4;
@@ -121,6 +122,10 @@ public class MeetingsActivity extends TabActivity {
     LinearLayout r19;
     LinearLayout r20;
     LinearLayout r21;
+    
+    LinearLayout replies;
+    LinearLayout breplies;
+    LinearLayout lanalisis;
 
     TextView crc2;
     
@@ -282,7 +287,7 @@ public class MeetingsActivity extends TabActivity {
         ers4 = (EditText) findViewById(R.id.ers4);
         ers5 = (EditText) findViewById(R.id.ers5);
         
-        rc1 = (TextView) findViewById(R.id.rc1);
+        rc1 = (Chronometer) findViewById(R.id.rc1);
         rc2 = (Chronometer) findViewById(R.id.rc2);
         rc3 = (Chronometer) findViewById(R.id.rc3);
         rc4 = (Chronometer) findViewById(R.id.rc4);
@@ -326,9 +331,14 @@ public class MeetingsActivity extends TabActivity {
         r20 = (LinearLayout) findViewById(R.id.r20);
         r21 = (LinearLayout) findViewById(R.id.r21);
         
+        lanalisis = (LinearLayout) findViewById(R.id.lanalisis);
+        
+        replies = (LinearLayout) findViewById(R.id.replies);
+        breplies = (LinearLayout) findViewById(R.id.breplies);
+        
         counter = (TextView) findViewById(R.id.Tcounter);
+        analisis = (TextView) findViewById(R.id.analisis);
         counterbutton = (Button) findViewById(R.id.buttoncounter);
-        mincounter = (Button) findViewById(R.id.mincounter);
 
         r1.setVisibility(View.GONE);
         r2.setVisibility(View.GONE);
@@ -352,13 +362,26 @@ public class MeetingsActivity extends TabActivity {
         r20.setVisibility(View.GONE);
         r21.setVisibility(View.GONE);
         
+        replies.setVisibility(View.GONE);
+        breplies.setVisibility(View.GONE);
+        
+        lanalisis.setVisibility(View.GONE);
+        
         counterbutton.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
             	num++;
                 counter.setText(Integer.toString(num));
+                if(num == 0){
+                	lanalisis.setVisibility(View.VISIBLE);
+                	analisis.setText(cLectura.getText());
+                	counterbutton.setText(getResources().getText(R.string.newreply));
+                	rc1.setBase(SystemClock.elapsedRealtime());
+                	rc1.start();
+                	replies.setVisibility(View.VISIBLE);
+                }
                 if(num == 1){
                 	r1.setVisibility(View.VISIBLE);
-                	rc1.setText(cLectura.getText());
+                	rc1.stop();
                 	rc2.setBase(SystemClock.elapsedRealtime());
                 	rc2.start();
                 }
@@ -482,13 +505,6 @@ public class MeetingsActivity extends TabActivity {
                 }
             }
         });
-        
-        mincounter.setOnClickListener(new View.OnClickListener() {
-            public void onClick(View v) {
-                num--;
-                counter.setText(Integer.toString(num));
-            }
-        });
       
     }
     
@@ -514,6 +530,8 @@ public class MeetingsActivity extends TabActivity {
         public void onClick(View v) {
         	cLectura.setBase(SystemClock.elapsedRealtime());
         	cLectura.start();
+        	breplies.setVisibility(View.VISIBLE);
+        	counterbutton.setText(getResources().getText(R.string.banalisis));
         }
     };
     View.OnClickListener LStopLb = new OnClickListener() {
@@ -749,7 +767,7 @@ public class MeetingsActivity extends TabActivity {
        				getResources().getText(R.string.sReading) + " " +
        				cLectura.getText() + "\n" +
        				getResources().getText(R.string.sharereply) + " " +
-       				counter.getText()
+       				counter.getText() + "\n" +getResources().getText(R.string.analisis) + ": " + analisis.getText()
        				+ "\n" + getResources().getText(R.string.reply1) + ": " + rc1.getText()
        				+ "\n" + getResources().getText(R.string.reply2) + ": " + rc2.getText()
        				+ "\n" + getResources().getText(R.string.reply3) + ": " + rc3.getText()
